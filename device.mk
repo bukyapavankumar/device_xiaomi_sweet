@@ -376,6 +376,13 @@ PRODUCT_PACKAGES += \
     fstab.emmc \
     ueventd.qcom.rc \
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_xiaomi
+
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc
+    
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
